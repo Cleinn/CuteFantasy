@@ -208,7 +208,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2311659948842064771, guid: 316fd89e585cafd42bc0acc3de795cff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -244,9 +244,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 466332259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcbb702587c93af48872db4be24fae19, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb6eaffc3bd55841b64e573180fcddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  speed: 2
+  player: {fileID: 466332264}
+  playeranim: {fileID: 466332260}
 --- !u!50 &466332264
 Rigidbody2D:
   serializedVersion: 5
@@ -262,7 +265,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -273,7 +276,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
